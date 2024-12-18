@@ -3,7 +3,7 @@ server:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://112.221.66.174:3308/phonebookdb1
+    url: jdbc:mysql://localhost:3306/phonebookdb1
     username: gangnam
     password: gangnam
   jpa:
