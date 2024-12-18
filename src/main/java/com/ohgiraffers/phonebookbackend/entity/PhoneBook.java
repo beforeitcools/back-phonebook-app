@@ -3,7 +3,7 @@ package com.ohgiraffers.phonebookbackend.entity;
 import jakarta.persistence.*;
 
 @Entity
-@Table(name = "cotacts")
+@Table(name = "contacts")
 public class PhoneBook {
 
     @Id
