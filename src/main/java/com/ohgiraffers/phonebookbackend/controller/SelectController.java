@@ -20,7 +20,6 @@ public class SelectController
     public List<PhoneBook> selectAllContacts()
     {
         List<PhoneBook> contactList = selectService.selectAllContacts();
-        System.out.println(contactList);
         return contactList;
     }
 
