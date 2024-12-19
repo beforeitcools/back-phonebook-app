@@ -2,6 +2,7 @@ package com.ohgiraffers.phonebookbackend.dto;
 
 public class PhoneBookDTO {
 
+    private Integer id;
     private String name;
     private String phoneNumber;
     private String profileImg;
@@ -10,11 +11,19 @@ public class PhoneBookDTO {
     public PhoneBookDTO() {
     }
 
-    public PhoneBookDTO(String name, String phoneNumber, String profileImg, int status) {
+    public PhoneBookDTO(Integer id, String name, String phoneNumber, String profileImg, int status) {
         this.name = name;
         this.phoneNumber = phoneNumber;
         this.profileImg = profileImg;
         this.status = status;
+    }
+
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
     }
 
     public String getName() {
@@ -52,7 +61,8 @@ public class PhoneBookDTO {
     @Override
     public String toString() {
         return "PhoneBookDTO{" +
-                "name='" + name + '\'' +
+                "id=" + id +
+                ", name='" + name + '\'' +
                 ", phoneNumber='" + phoneNumber + '\'' +
                 ", profileImg='" + profileImg + '\'' +
                 ", status=" + status +

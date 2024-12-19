@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface PhoneBookRepository extends JpaRepository<PhoneBook, Integer> {
-    PhoneBook findById(int id);
+//    PhoneBook findById(int id);
 }

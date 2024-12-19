@@ -23,7 +23,7 @@ public class RemoveService {
 
         int id = Integer.valueOf(deleteMenu.get("id"));
         
-        PhoneBook phoneBook = phoneBookRepository.findById(id);
+        PhoneBook phoneBook = phoneBookRepository.findById(id).orElse(null);
         phoneBookRepository.delete(phoneBook);
 
         return "delete 성공";
